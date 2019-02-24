@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/p_header_parameter">
+        <EditTextPreference
+            android:defaultValue="https://symbiote-open.man.poznan.pl/coreInterface/"
+            android:inputType="textUri"
+            android:key="P_CORE_AAM"
+            android:persistent="true"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/p_core_aam_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="API settings">
+        <EditTextPreference
+            android:defaultValue="50"
+            android:inputType="number"
+            android:key="RESOURCE_MAX_DATA_ITEMS"
+            android:persistent="true"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Max number of data readings in response" />
+        <EditTextPreference
+            android:defaultValue="100"
+            android:inputType="number"
+            android:key="QUERY_MAX_DATA_ITEMS"
+            android:persistent="true"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Max number of resource items in search query response" />
+        <EditTextPreference
+            android:defaultValue="5000"
+            android:inputType="number"
+            android:key="MAX_READ_TIMEOUT"
+            android:persistent="true"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Max reading timeout" />
+    </PreferenceCategory>
+</PreferenceScreen>

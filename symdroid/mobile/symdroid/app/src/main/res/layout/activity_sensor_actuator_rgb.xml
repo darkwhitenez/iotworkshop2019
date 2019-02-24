@@ -1,0 +1,170 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_sensor_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="0.3"
+                android:text="R" />
+
+
+            <com.warkiz.widget.IndicatorSeekBar
+                android:id="@+id/indicatorR"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                app:isb_indicator_color="@color/gray_87"
+                app:isb_indicator_text_color="@color/gray_87"
+                app:isb_indicator_text_size="18sp"
+                app:isb_max="100"
+                app:isb_min="0"
+                app:isb_only_thumb_draggable="false"
+                app:isb_progress="50"
+                app:isb_seek_smoothly="true"
+                app:isb_show_indicator="rounded_rectangle"
+                app:isb_thumb_color="@color/color_red"
+                app:isb_thumb_size="20dp"
+                app:isb_tick_marks_size="13dp"
+                app:isb_tick_texts_color="@color/gray_87"
+                app:isb_tick_texts_size="15sp"
+                app:isb_ticks_count="5"
+                app:isb_track_background_size="2dp"
+                app:isb_track_progress_color="@color/color_red"
+                app:isb_track_progress_size="4dp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="0.3"
+                android:text="G" />
+
+
+            <com.warkiz.widget.IndicatorSeekBar
+                android:id="@+id/indicatorG"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                app:isb_indicator_color="@color/gray_87"
+                app:isb_indicator_text_color="@color/gray_87"
+                app:isb_indicator_text_size="18sp"
+                app:isb_max="100"
+                app:isb_min="0"
+                app:isb_only_thumb_draggable="false"
+                app:isb_progress="50"
+                app:isb_seek_smoothly="true"
+                app:isb_show_indicator="rounded_rectangle"
+                app:isb_thumb_color="@color/color_green"
+                app:isb_thumb_size="20dp"
+                app:isb_tick_marks_size="13dp"
+                app:isb_tick_texts_color="@color/gray_87"
+                app:isb_tick_texts_size="15sp"
+                app:isb_ticks_count="5"
+                app:isb_track_background_size="2dp"
+                app:isb_track_progress_color="@color/color_green"
+                app:isb_track_progress_size="4dp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="0.3"
+                android:text="B" />
+
+
+            <com.warkiz.widget.IndicatorSeekBar
+                android:id="@+id/indicatorB"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                app:isb_indicator_color="@color/gray_87"
+                app:isb_indicator_text_color="@color/gray_87"
+                app:isb_indicator_text_size="18sp"
+                app:isb_max="100"
+                app:isb_min="0"
+                app:isb_only_thumb_draggable="false"
+                app:isb_progress="50"
+                app:isb_seek_smoothly="true"
+                app:isb_show_indicator="rounded_rectangle"
+                app:isb_thumb_color="@color/color_blue"
+                app:isb_thumb_size="20dp"
+                app:isb_tick_marks_size="13dp"
+                app:isb_tick_texts_color="@color/gray_87"
+                app:isb_tick_texts_size="15sp"
+                app:isb_ticks_count="5"
+                app:isb_track_background_size="2dp"
+                app:isb_track_progress_color="@color/color_blue"
+                app:isb_track_progress_size="4dp" />
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/rgbSendBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:backgroundTint="@color/lightGray"
+                android:paddingTop="6dp"
+                android:text="Send"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
